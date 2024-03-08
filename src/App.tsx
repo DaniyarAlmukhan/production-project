@@ -11,7 +11,7 @@ import { classNames } from './helpers/classNames/classNames';
 
 const App = () => {
   const { theme, toggleTheme } = useTheme()
-
+  console.log('check')
   return (
     <div className={classNames('app', {}, [theme])}>
       <button onClick={toggleTheme}>Toggle Theme</button>
