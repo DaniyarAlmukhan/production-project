@@ -3,8 +3,6 @@ import webpack from 'webpack';
 import { BuildOptions } from './types/config';
 
 export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
-
-
   const cssLoader = {
     test: /\.s[ac]ss$/i,
     use: [
@@ -14,25 +12,25 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
         options: {
           modules: {
             auto: (url: string) => url.includes('.module.'),
-            localIdentName: options.isDev ? '[path][name]__[local]' : '[hash:base64:5]'
+            localIdentName: options.isDev ? '[path][name]__[local]' : '[hash:base64:5]',
           },
-        }
+        },
       },
       'sass-loader',
     ],
 
-  }
+  };
 
   const typeScriptLoader = {
     test: /\.tsx?$/,
     use: 'ts-loader',
-    exclude: /node_modules/
-  }
+    exclude: /node_modules/,
+  };
 
   const svgLoader = {
     test: /\.svg$/,
-    use: ['@svgr/webpack']
-  }
+    use: ['@svgr/webpack'],
+  };
 
   const fileLoader = {
     test: /\.(png|jpe?g|gif|woff)$/i,
@@ -41,13 +39,12 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
         loader: 'file-loader',
       },
     ],
-  }
-
+  };
 
   return [
     fileLoader,
     svgLoader,
     typeScriptLoader,
-    cssLoader
-  ]
+    cssLoader,
+  ];
 }
