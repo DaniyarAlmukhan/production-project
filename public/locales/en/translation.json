@@ -3,5 +3,7 @@
   "translate": "Translate",
   "about": "About page",
   "main": "Main page",
-  "language": "English"
+  "language": "English",
+  "loading": "Loading...",
+  "toggle": "Toggle"
 }
