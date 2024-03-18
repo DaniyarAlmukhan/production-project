@@ -5,5 +5,9 @@
   "main": "Main page",
   "language": "English",
   "loading": "Loading...",
-  "toggle": "Toggle"
+  "toggle": "Toggle",
+  "notFound": "Page not found",
+  "error": "Unexpected error",
+  "reloadPage": "Reload page",
+  "throwError": "Throw error"
 }
