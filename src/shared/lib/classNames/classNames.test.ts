@@ -1,4 +1,4 @@
-import { classNames } from './classNames';
+import { classNames } from 'shared/lib/classNames/classNames';
 
 describe('classNames', () => {
   test('with first param', () => {
@@ -28,12 +28,12 @@ describe('classNames', () => {
     )).toBe(expected);
   });
 
-  // test('with mods undefined', () => {
-  //   const expected = 'someClass cls1 cls2 hovered';
-  //   expect(classNames(
-  //     'someClass',
-  //     { hovered: true, scrollable: undefined },
-  //     ['cls1', 'cls2'],
-  //   )).toBe(expected);
-  // });
+  test('with mods undefined', () => {
+    const expected = 'someClass cls1 cls2 hovered';
+    expect(classNames(
+      'someClass',
+      { hovered: true, scrollable: undefined },
+      ['cls1', 'cls2'],
+    )).toBe(expected);
+  });
 });
