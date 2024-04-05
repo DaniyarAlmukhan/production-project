@@ -20,16 +20,14 @@ export function buildPlugins({ paths, isDev }: BuildOptions): webpack.WebpackPlu
     }),
     new ReactRefreshWebpackPlugin(),
 
-
-  ]
+  ];
 
   if (isDev) {
-    plugins.push(new webpack.HotModuleReplacementPlugin())
+    plugins.push(new webpack.HotModuleReplacementPlugin());
     plugins.push(new BundleAnalyzerPlugin({
       openAnalyzer: false,
-    }))
+    }));
   }
-
 
   return plugins;
 }
