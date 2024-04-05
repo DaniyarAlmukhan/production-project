@@ -1,7 +1,11 @@
-@import "variables/global";
 @import "themes/dark";
 @import "themes/normal";
+@import "variables/global";
 @import "reset";
+
+:root {
+  --red-color: #f53f3f;
+}
 
 .app {
   font: var(--font-m);

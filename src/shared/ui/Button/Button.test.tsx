@@ -3,7 +3,7 @@ import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 
 describe('Button', () => {
   test('just render', () => {
-    render(<Button>123</Button>);
+    render(<Button>TOGGLE</Button>);
     expect(screen.getByText('123')).toBeInTheDocument();
   });
   test('render with theme', () => {
