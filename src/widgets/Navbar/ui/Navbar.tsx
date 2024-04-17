@@ -12,8 +12,7 @@ export const Navbar: FC<NavbarProps> = ({ className }) => {
   const { t } = useTranslation();
   return (
     <div className={classNames(classes.navbar, {}, [className])}>
-      <div className={classes.links}>
-      </div>
+      <div className={classes.links} />
     </div>
   );
 };
