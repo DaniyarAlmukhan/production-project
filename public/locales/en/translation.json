@@ -9,5 +9,6 @@
   "notFound": "Page not found",
   "error": "Unexpected error",
   "reloadPage": "Reload page",
-  "throwError": "Throw error"
+  "throwError": "Throw error",
+  "short-language": "EN"
 }

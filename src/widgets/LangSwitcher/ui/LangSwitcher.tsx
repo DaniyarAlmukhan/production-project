@@ -5,8 +5,9 @@ import { FC } from 'react';
 
 interface LangSwitcherProps {
   className?: string
+  short?: boolean
 }
-export const LangSwitcher: FC<LangSwitcherProps> = ({ className }) => {
+export const LangSwitcher: FC<LangSwitcherProps> = ({ className, short }) => {
   const { t, i18n } = useTranslation();
 
   const toggle = async () => {
@@ -16,10 +17,10 @@ export const LangSwitcher: FC<LangSwitcherProps> = ({ className }) => {
   return (
     <Button
       className={classNames('', {}, [className])}
-      theme={ButtonTheme.CLEAR}
+      theme={ButtonTheme.CLEAR_INVERTED}
       onClick={toggle}
     >
-      {t('language')}
+      {t(short ? 'short-language' : 'language')}
     </Button>
   );
 };
