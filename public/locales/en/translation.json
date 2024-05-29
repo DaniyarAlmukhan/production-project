@@ -10,5 +10,6 @@
   "error": "Unexpected error",
   "reloadPage": "Reload page",
   "throwError": "Throw error",
-  "short-language": "EN"
+  "short-language": "EN",
+  "login": "Login"
 }
