@@ -11,5 +11,7 @@
   "reloadPage": "Reload page",
   "throwError": "Throw error",
   "short-language": "EN",
-  "login": "Login"
+  "login": "Login",
+  "Введите username": "Enter username",
+  "Введите пароль": "Enter password"
 }
