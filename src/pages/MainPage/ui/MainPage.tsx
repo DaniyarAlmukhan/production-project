@@ -14,7 +14,6 @@ const MainPage = () => {
     <>
       <div>{t('main')}</div>
       <Counter />
-      <Input value={value} onChange={onChange} placeholder="Введите текст" />
     </>
   );
 };
